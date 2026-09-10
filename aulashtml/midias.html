@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Multimídia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <h1>Elementos Multimídia</h1>
+ 
+    <!-- tag nav: elemento semântico para menu de navegação -->
+    <nav>
+        <a href="conteudo-expansivel.html">Exemplo details/summary</a>
+        <a href="midias.html">Exemplo mídias</a>
+    </nav>
+
+    <p class="introducao">
+        O HTML5 permite trabalhar com diferentes tipos de mídia para audio e video, além de conteúdo externo.
+    </p>
+
+    <section>
+        <h2>Áudio</h2>
+        <div class="caixa-midia">
+            <audio controls>
+                <source src="multimidia/judas-priest.mp3" type="audio/mpeg">
+                <source src="multimidia/judas-priest.ogg" type="audio/ogg">
+
+            </audio>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Vídeo</h2>
+        <div>
+
+            <video controls>
+                <source src="multimidia/pink-floyd.mp4" type="video/mpeg">
+                <source src="multimidia/pink-floyd.webm" type="video/webm">
+                <track src="multimidia/legenda.vtt" kind="subtitles" srclang="en"></track>
+            </video>
+        </div>
+    </section>
+
+    <section>
+
+        <h2>Vídeo do Youtube usando a tag iframe</h2>
+        <div class="caixa-alta">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kcjEOsxg1FY?si=xaLOki-VTrcYTHhr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+</body>
+</html>

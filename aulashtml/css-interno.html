@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Interno</title>
+    <style>
+        body{
+            /* background-color: aliceblue; */
+            background: linear-gradient(to right, rgb(90, 103, 108),rgb(175, 19, 19));
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            color: rgb(175, 19, 19);
+            font-size: 50px;
+            background-color: rgb(42, 38, 38);
+            font-family: "arial";
+            padding: 8px;
+            border-radius: 10px;
+            text-align: center;
+            text-shadow: black 5px 2px 4px;
+        }
+
+        h2{
+            color:rgb(175, 19, 19);font-size: 30px;font-family: "arial";
+        }
+
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Explorando o CSS Interno</h1>
+
+    <p>
+        O CSS é utilizado para alterar a aparência dos elementos
+        criados com HTML.
+    </p>
+
+    <hr>
+
+    <h2>Seletores de tag</h2>
+
+    <p>
+        Podemos utilizar o nome de uma tag como seletor. Por exemplo,
+        podemos alterar a aparência de todos os parágrafos da página.
+    </p>
+
+    <h3>Exemplo</h3>
+
+    <p>
+        Neste parágrafo temos um texto em<b>negrito</b>, um texto em <i>itálico</i> e uma palavra <mark>destacada</mark>.
+    </p>
+
+    <hr>
+
+    <h2>Seletores descendentes</h2>
+
+    <p>
+        Também podemos selecionar elementos que estão dentro de outros
+        elementos. Neste caso, podemos aplicar estilos específicos aos
+        elementos <b>b</b>, <i>i</i> e <mark>mark</mark> quando eles
+        estiverem dentro de um parágrafo.
+    </p>
+
+    <ul>
+        <li><b>Este negrito não recebe a formatação</b></li>
+        <li><i>E nem este itálico</i></li>
+    </ul>
+
+    <h3>Outro exemplo</h3>
+
+    <p>
+        Podemos deixar uma palavra em <b>negrito</b>,
+        outra em <i>itálico</i> e também
+        <mark>destacar uma informação importante</mark>.
+    </p>
+</body>
+</html>

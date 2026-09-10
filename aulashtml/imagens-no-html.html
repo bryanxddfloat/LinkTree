@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Imagens no HTML</title>
+	</head>
+ 
+	<body>
+		<h1>Trabalhando com imagens</h1>
+		
+		<hr>
+		
+		<p>As imagens ajudam a tornar uma página mais visual e podem complementar as informações apresentadas no site.</p>
+		<p>Para manter o projeto/site organizado, recomenda-se colocar <b>todas as imagens</b> em uma pasta dedicada a isso (normalmente, uma pasta chamada "imagens").</p>
+		
+		<hr>
+		
+		<h2>Formatos de imagem para a web</h2>
+		
+		<ul>
+		
+			<li>JPG/JPEG: muito usado para fotografias</li>
+			<li>PNG: suporta transparência</li>
+			<li>GIF: usado para imagens animadas</li>
+			<li>WebP: formato moderno que oferece arquivos mais leves e com maior qualidade.</li>
+			<li>SVG: formato vetorial, usado principalmente em logotipos, ícones e ilustrações.</li>
+		</ul>
+		
+		<hr>
+		
+		<h2>Exemplo 1: inserindo uma imagem</h2>
+		<!--Tag img e os aributos src e alt -->
+		<!-- Src: source (origem/caminho)
+             Alt: Altenative text-->
+			 
+		<p>Usamos a tag <code>img</code> para inserir imagens na página.</p>
+		<p>Com o atributo <code>scr</code> definimos o caminho e nome da imagem que queremos exibir, e com o atributo <code>alt</code> definimos um texto alternativo que serve para a acessibilidade de usuários cegos e para quando a imagem não for carregada por qualquer motivo. </p>
+		
+		<img src="imagens/pacoca.jpg" alt="4 paçocas dentro de um pote">
+		
+		<h2>Exemplo 2: usando mais de uma imagem</h2>
+		
+		<hr>
+
+		<img src="imagens/logo-html5.png" alt="Logotipo do HTML5">
+		<img src="imagens/logo-css3.gif" alt="Logotipo do CSS3">
+		<img src="imagens/logo-javascript.gif" alt="Logotipo do JavaScript">
+		<h2>Exemplo 3: imagem com texto</h2>
+		
+		<hr>
+		
+		<p>Programação é uma atividade que utiliza lógica</p>
+		
+		<img src="imagens/computer.gif" alt="Personagem animado batendo loucamente no teclado">
+		
+		<p>Cuidado pra não enlouquecer.</p>
+		
+		<h2>Exemplo 4: imagem com legenda</h2>
+		<!-- Estas tags vieram como parte do HTML5-->
+		
+		<hr>
+
+		<p>Usamos a tag <code>figure</code> para agrupar uma ou mais imagens/ilustrações, e a tag <code>figcaption</code> para adicionar uma legenda.</p>
+
+		<figure>
+		
+			<img src= "imagens/stonehenge.jpg" alt='Monumento em ruínas do Stonehenge'>
+			<figcaption>Stonehenge, um dos monumentos pré-históricos mais famosos do mundo. Foto tirada de 2024.</figcaption>
+		</figure>
+		
+		<figure>
+			<img src="imagens/logo-html5.png" alt="Logotipo do HTML5">
+			<img src="imagens/logo-css3.gif" alt="Logotipo do CSS3">
+			<img src="imagens/logo-javascript.gif" alt="Logotipo do JavaScript">
+		<figcaption>
+		
+				Algumas das principais tecnologias usadas no <b>desenvolvimento web</b>.
+		</figcaption>
+		</figure>
+		
+		<h2>Exemplo 5: alterado o tamanho de exibição da imagem</h2>
+		
+		<p>Podemos usar os atributos <code>width</code> ou <code>height</code> para alterar o tamanho de exibição da imagem. <mark>Atenção!</mark> isso não tornará a imagem mais "leve".</p>
+		
+		<!-- width: largura, height: altura -->
+		
+		<img src="imagens/pink-floyd.jpg" alt="Integrantes de banda acenando" width="300">
+		
+		<p>Quando definimos a largura (width), o navegador automaticamente define a altura (height) mantendo as proporções da imagem.</p>
+		
+		<h2>Exemplo 6: comparando formatos</h2>
+		
+		<img src="imagens/montanhas.jpg" alt="Paisagem montanhosa">
+		<img src="imagens/montanhas.webp" alt="Paisagem montanhosa">
+		
+		<h2>Exemplo 7: formato vetorial SVG</h2>
+		
+		<p>Arquivos SVG poem ser redimensionados <b>sem perda</b> de qualidade.</p>
+		
+		<!-- BITMAP (PIXELS, PONTOS, RASTERIADA) -->
+		<img src="imagens/black-cat.png" alt="Gato preto" width="300">
+		
+		<!-- VETOR (NÓS, SEGMENTOS, LINHAS, CALCULADO PELO PC) -->
+		<img src="imagens/black-cat.svg" alt="Gato preto" width="300">
+		
+		<img src="imagens/black-cat(2).svg" alt="Gato preto" width="300">
+		
+		<!-- Atributos: src, alt, width e height -->
+		<img alt="" width="" src="">
+		
+</body>
+</html>
